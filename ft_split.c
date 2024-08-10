@@ -6,12 +6,12 @@
 /*   By: thelee <thelee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 17:56:12 by thelee            #+#    #+#             */
-/*   Updated: 2024/06/15 15:19:36 by thelee           ###   ########.fr       */
+/*   Updated: 2024/08/08 21:22:54 by thelee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-int	count(char const *s, char c)
+int	ft_count(char const *s, char c)
 {
 	int	count;
 
@@ -64,7 +64,7 @@ char	**ft_split(char const *s, char c)
 
 	if (s == NULL)
 		return (NULL);
-	countword = count(s, c);
+	countword = ft_count(s, c);
 	dest = malloc(sizeof (char *) * (countword + 1));
 	if (!dest)
 		return (NULL);
